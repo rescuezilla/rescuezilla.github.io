@@ -5,8 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<script src="http://redobackup.org/modules/output_filter/js/mdcr.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="http://redobackup.org/templates/redo2013/style.css" media="screen" />
+	<script src="./modules/output_filter/js/mdcr.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="./templates/redo2013/style.css" media="screen" />
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
 	<title>Redo Backup Help</title>
 
@@ -23,19 +23,19 @@
   <div id="header">
     <div id="navbar">
 <ul>
-<li><span class="menu_default"><a href="http://redobackup.org" target="_top"  class="menu_default"> About </a></span>
+<li><span class="menu_default"><a href="./index.html" target="_top"  class="menu_default"> About </a></span>
 </li>
-<li><span class="menu_default"><a href="http://redobackup.org/features.php" target="_top"  class="menu_default"> Features </a></span>
+<li><span class="menu_default"><a href="./features.php" target="_top"  class="menu_default"> Features </a></span>
 </li>
-<li><span class="menu_default"><a href="http://redobackup.org/download.php" target="_top"  class="menu_default"> Download </a></span>
+<li><span class="menu_default"><a href="./download.php" target="_top"  class="menu_default"> Download </a></span>
 </li>
-<li><span class="menu_current"><a href="http://redobackup.org/help.php" target="_top"  class="menu_current"> Help </a></span>
+<li><span class="menu_current"><a href="./help.php" target="_top"  class="menu_current"> Help </a></span>
 </li>
 </ul></div>
     <div id="tagline">Backup Made Simple.</div>
   </div>
   <div id="content">
-    <a class="section_anchor" id="wb_9" name="wb_9"></a><h1><img width="128" height="128" align="right" src="http://redobackup.org/media/icons/help.png" style="margin-left: 20px;" alt="" />Need Help?</h1>
+    <a class="section_anchor" id="wb_9" name="wb_9"></a><h1><img width="128" height="128" align="right" src="./media/icons/help.png" style="margin-left: 20px;" alt="" />Need Help?</h1>
 <p>Please take a moment to read our FAQ below, as it has the answers to the most common questions we receive about Redo Backup. If you don't find the answer here, please post your questions or suggestions to the <a rel="nofollow" target="_blank" href="http://sourceforge.net/projects/redobackup/forums">Redo Backup forum on SourceForge</a>.</p>
 <h2>Frequently Asked Questions</h2>
 <div class="faq rounded">

@@ -5,8 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<script src="http://redobackup.org/modules/output_filter/js/mdcr.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="http://redobackup.org/templates/redo2013/style.css" media="screen" />
+	<script src="./modules/output_filter/js/mdcr.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="./templates/redo2013/style.css" media="screen" />
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
 	<title>Redo Backup Download</title>
 
@@ -23,13 +23,13 @@
   <div id="header">
     <div id="navbar">
 <ul>
-<li><span class="menu_default"><a href="http://redobackup.org" target="_top"  class="menu_default"> About </a></span>
+<li><span class="menu_default"><a href="./index.html" target="_top"  class="menu_default"> About </a></span>
 </li>
-<li><span class="menu_default"><a href="http://redobackup.org/features.php" target="_top"  class="menu_default"> Features </a></span>
+<li><span class="menu_default"><a href="./features.php" target="_top"  class="menu_default"> Features </a></span>
 </li>
-<li><span class="menu_current"><a href="http://redobackup.org/download.php" target="_top"  class="menu_current"> Download </a></span>
+<li><span class="menu_current"><a href="./download.php" target="_top"  class="menu_current"> Download </a></span>
 </li>
-<li><span class="menu_default"><a href="http://redobackup.org/help.php" target="_top"  class="menu_default"> Help </a></span>
+<li><span class="menu_default"><a href="./help.php" target="_top"  class="menu_default"> Help </a></span>
 </li>
 </ul></div>
     <div id="tagline">Backup Made Simple.</div>
@@ -39,7 +39,7 @@
 <h2>If you like Redo, check this out!</h2>
 <p>We've finally released&nbsp;OpenDynamo, our PHP-based project for backing up, restoring, and installing new websites over at <a target="_blank" href="http://opendynamo.org">OpenDynamo.org</a> which allows anyone to create a new open source website in just a few clicks. It's kind of like having Redo Backup for your website!</p>
 </div></div>
-<h1><img width="128" height="128" align="right" src="http://redobackup.org/media/icons/cd.png" style="margin: 0px 0px 10px 10px;" alt="" />Get Redo Backup</h1>
+<h1><img width="128" height="128" align="right" src="./media/icons/cd.png" style="margin: 0px 0px 10px 10px;" alt="" />Get Redo Backup</h1>
 <p><strong>We need feedback! If you like it, please consider giving the project a &quot;thumbs up&quot; on SourceForge.</strong> If you find a problem, please go <a href="/bugs/" rel="nofollow">here</a> to tell us how we can improve Redo Backup. It is a <a href="http://en.wikipedia.org/wiki/Live_cd" target="_blank" rel="nofollow">live CD</a>,  so you cannot run the program from within Windows or any other operating  system; you need to follow the steps below exactly as they are presented in order to use Redo Backup.<strong><br />
 </strong></p>
 <h2><strong>Getting Started</strong></h2>
