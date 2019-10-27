@@ -1,0 +1,210 @@
+@font-face {
+	font-family: 'Archivo Narrow';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Archivo Narrow Regular'), local('ArchivoNarrow-Regular'), url(ArchivoNarrow-Regular.woff) format('woff');
+	}
+
+@font-face {
+	font-family: 'Archivo Narrow';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Archivo Narrow Bold'), local('ArchivoNarrow-Bold'), url(ArchivoNarrow-Bold.woff) format('woff');
+	}
+
+body,td,th,p {
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #202020;
+	}
+body {
+	background: white;
+	margin: 0px 0px 0px 0px;
+	}
+a:link, a:visited, a:active {
+	color: #F58D23;
+	text-decoration: none;
+	font-weight: bold;
+	}
+a:hover {
+	color: orange;
+	text-decoration: none;
+	}
+hr {
+	margin: 15px 0px 15px 0px;
+	color: #036;
+	height: 1px;
+	width: 100%;
+	}
+p {
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+	}
+h1 {
+	/*
+	font-size: 46px;
+	font-weight: bold;
+	margin: 0px 0px 10px -2px;
+	*/
+	color: #345278;
+	letter-spacing: -1px;
+	}
+h2 {
+	/*
+	font-size: 36px;
+	font-weight: bold;
+	margin: 35px 0px 5px 0px;
+	letter-spacing: -1px;
+	*/
+	color: gray;
+	}
+form {
+	margin: 0;
+	}
+
+#main {
+	background: white;
+	width: 960px;
+	text-align: left;
+	margin: auto 0px;
+	}
+#content {
+	margin: 50px 40px;
+	line-height: 150%;
+	}
+#header {
+	background: url(images/redo-header.png) no-repeat top center;
+	height: 135px;	
+	}
+#navbar {
+	float: right;
+	padding: 0px 35px 10px 10px;
+	text-transform: lowercase;
+	text-align: right;
+	font-size: 18px;
+	font-weight: bold;
+	}
+#navbar ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	float: right;
+	}
+#navbar li {
+	margin: 4px 15px 0px 0px;
+	float: left;
+	}
+#navbar li a {
+	color: #627D9F;
+	text-decoration: none;
+	}
+#navbar li a:hover {
+	color: #E1E1E9;
+	text-decoration: none;
+	}
+#tagline {
+	float: left;
+	clear: both;
+	margin: 10px 0px 0px 220px;
+	color: white;
+	font-size: 22px;
+	font-weight: normal;
+	text-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
+	}
+#footer {
+	background: url(images/redo-footer.png) bottom center no-repeat;
+	width: 960px;
+	font-size: 12px;
+	color: silver;
+	margin: 30px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 100px;
+	text-align: right;
+	}
+.menu_current {
+	color: orange !important;
+	}
+#features td img {
+	margin: 5px 20px 5px 0px;
+	}
+#features h2 {
+	margin-top: 5px;
+	}
+.rounded {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	}
+.faq {
+	background: #ebebeb;
+	padding: 10px 30px;
+	margin: 20px 0px;
+	}
+.bluebox {
+	padding: 10px 30px;
+	margin: 20px 0px;
+        background: #345278;
+        color: white;
+	}
+.graybox {
+	background: #ebebeb;
+	padding: 20px 20px 5px 20px;
+	margin: 20px 0px;
+	text-align: left;
+	}
+.graybox h2 {
+	margin: 0px 0px 5px 0px;
+	}
+.orangebox {
+	background: #F58D23;
+	padding: 20px 20px 5px 20px;
+	margin: 20px 0px;
+	text-align: left;
+	}
+.orangebox h2 {
+	color: white;
+	margin: 0px 0px 5px 0px;
+	}
+.orangebox a {
+	color: white;
+	}
+.orangebox a:hover {
+	color: yellow;
+	}
+#shotbox {
+	padding: 0px;
+	margin: 0px 0px 10px 20px;
+	width: 160px;
+	float: right;
+	}
+#shotbox h3 {
+	text-align: center;
+	margin: 10px 0px 10px 0px;
+	color: #617C9E;
+	}
+#shotbox img {
+	margin: 0px 20px 20px 20px;
+	border: none;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+#downloadbox {
+	text-decoration: none;
+	display: block;
+	width: 300px;
+	padding: 5px 10px;
+	color: white;
+	border: 3px solid white;
+	box-shadow: 2px 2px 5px rgba(0,0,0, 0.25);
+	}
+#downloadbox h2 {
+	color: #F58D23;
+	margin: 0px;
+	}
+#downloadbox:hover {
+	background: #F58D23;
+	color: #345278;
+	}
+#downloadbox:hover h2 {
+	color: white;
+	}
