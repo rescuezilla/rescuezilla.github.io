@@ -1,4 +1,4 @@
-﻿/**
+/**
  *
  * @copyright       2009-2012, WebsiteBaker Org. e.V.
  * @link            http://www.websitebaker.org/
