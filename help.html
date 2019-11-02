@@ -39,16 +39,20 @@
 <p>Please take a moment to read our FAQ below, as it has the answers to the most common questions we receive about Rescuezilla. If you don't find the answer here, please post your questions or suggestions to the <a rel="nofollow" target="_blank" href="http://sourceforge.net/projects/redobackup/forums">Rescuezilla forum currently hosted on SourceForge</a>.</p>
 <h2>Frequently Asked Questions</h2>
 <div class="faq rounded">
+<h3>Q: Is Rescuezilla a drop-in replacement to Clonezilla?</h3>
+<p>A: No, not yet. However, with your contributions on <a target="_blank" href="https://www.patreon.com/rescuezilla">Patreon</a> it can be that, and <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aenhancement">much more</a>!</p>
+</div>
+<div class="faq rounded">
+<h3>Q: Does Rescuezilla support EFI boot?</h3>
+<p>A: Rescuezilla v1.0.5 only supports legacy BIOS boot. EFI support is coming in v1.0.6 (<a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/1">#1</a>). A quick workaround for systems that do not support legacy MBR is to first boot <a rel="nofollow" target="_blank" href="https://sourceforge.net/projects/refind/files/0.11.4">rEFInd from a flashdrive</a>.</p>
+</div>
+<div class="faq rounded">
 <h3>Q: Rescuezilla hangs during boot!</h3>
-<p>A: Some computers boot extremely slow. Give it a minute, especially if the computer continues to read from the CD-ROM or USB&nbsp;drive. If you only experience this when booting from USB, it is possible that in the BIOS, your USB&nbsp;drive may need to be identified as USB-HDD, USB-ZIP, or some other setting that may improve performance.</p>
+<p>A: Some computers boot extremely slow. Give it a minute, especially if the computer continues to read from the USB drive. If you only experience this when booting from USB, it is possible that in the BIOS, your USB&nbsp;drive may need to be identified as USB-HDD, USB-ZIP, or some other setting that may improve performance.</p>
 </div>
 <div class="faq rounded">
 <h3>Q:&nbsp;My backup froze at XX% and no error was given! What happened?</h3>
-<p>A: Close out the backup program. Click Start &gt;&nbsp;Tools &gt;&nbsp;Terminal. At the terminal type <strong>cat /partclone.log</strong> and hit ENTER to see what went wrong. Then file a bug report with the <strong>exact</strong> error message you received. Remember that Rescuezilla is a frontend to the <a rel="nofollow" target="_blank" href="http://partclone.org">Partclone</a> project, so if you can run partclone successfully, Rescuezilla should work for you.&nbsp;Also remember that if the drive is filled or otherwise becomes inaccessible (e.g. loss of network connection)&nbsp;while a backup is being saved or restored, the process will fail.</p>
-</div>
-<div class="faq rounded">
-<h3>Q:&nbsp;How can I&nbsp;see the commands/output/errors/debug mode?</h3>
-<p>A: Boot into Rescuezilla. Close the Rescuezilla window that automatically is opened for you. Go to Start &gt;&nbsp;Tools &gt;&nbsp;Terminal. In the terminal window, type <strong>rescuezilla</strong> and hit ENTER. This will launch Rescuezilla again, but this time the terminal window stays open, allowing you to see all the background commands and output generated in the process. If you are having trouble restoring, pay particular attention to the terminal window when the restore begins; this is when the partition table is being written and the filesystems are being created.</p>
+<p>A: Close the backup program. Open the redobackup.logs directory on desktop and view the most recent log file to see what went wrong. Then file a bug report and upload the log file. Remember that Rescuezilla is a frontend to the <a rel="nofollow" target="_blank" href="http://partclone.org">Partclone</a> project, so if you can run partclone successfully, Rescuezilla should work for you.&nbsp;Also remember that if the drive is filled or otherwise becomes inaccessible (e.g. loss of network connection)&nbsp;while a backup is being saved or restored, the process will fail.</p>
 </div>
 <div class="faq rounded">
 <h3>Q:&nbsp;Can I&nbsp;restore a backup to a smaller drive?</h3>
@@ -56,9 +60,8 @@
 <p>However, you can always restore to a larger drive, resize the partition, and back up the smaller partition if needed. Partitions can easily be resized using the included partition editor utility&nbsp;(GParted).</p>
 </div>
 <div class="faq rounded">
-<h3>Q:&nbsp;Why won't my hardware work?</h3>
-<p>A: It may not be supported by Ubuntu&nbsp;Linux. If that's the case, then Rescuezilla won't support it either.</p>
-<p>Here's why: Rescuezilla is simply a program that runs under Ubuntu Linux. Ubuntu is the underlying operating system, and we do not maintain Ubuntu. Our small team is not able to add support for an obscure or cutting-edge network card, for example; this is precisely what we rely on Ubuntu for. If your hardware isn't working properly, you should report it to the proper channels. All we can do to help correct hardware problems is to base Rescuezilla on a later version of Ubuntu once the issue is fixed.</p>
+<h3>Q: Can I use the same Rescuezilla USB drive with many computers simultaneously?</h3>
+<p>A: Yes. Select the 'Safe Mode' menu item (which includes the 'toram' parameter) and wait for the system to boot before removing the USB drive.</p>
 </div>
 <h2>Report a Bug</h2>
 <p>If you are fairly certain that you've encountered a bug, please review this checklist:</p>
@@ -68,7 +71,7 @@
     <li>Is the behavior an actual error, or is it merely different from how you would prefer the software work?</li>
 </ul>
 <p>If you are confident that you've found an error we need to know about, we encourage you to take a moment and provide us with the information we need to fix it. Your participation ensures a better project that we all benefit from.</p>
-<p>To run Rescuezilla in <strong>debug mode</strong> to see the specific error message that caused your problem, read the FAQ&nbsp;above.&nbsp;Remember that Rescuezilla is simply a front end, and that <a href="http://partclone.org" target="_blank" rel="nofollow">Partclone</a> is the actual program doing the work. If your error lies with Partclone, please contact Partclone to file a bug with their team, rather than sending it to us.</p>
+<p>To view the Rescuezilla <strong>log file</strong> to see the specific error message that caused your problem, read the FAQ&nbsp;above.&nbsp;Remember that Rescuezilla is simply a front end, and that <a href="http://partclone.org" target="_blank" rel="nofollow">Partclone</a> is the actual program doing the work. If your error lies with Partclone, please contact Partclone to file a bug with their team, rather than sending it to us.</p>
 <ul>
     <li><strong>Submit a </strong><a href="https://github.com/rescuezilla/rescuezilla/issues" rel="nofollow"><strong>Bug Report</strong></a></li>
 </ul>
