@@ -36,7 +36,7 @@
   </div>
   <div id="content">
     <a class="section_anchor" id="wb_9" name="wb_9"></a><h1><img width="128" height="128" align="right" src="./media/icons/help.png" style="margin-left: 20px;" alt="" />Need Help?</h1>
-<p>Please take a moment to read our FAQ below, as it has the answers to the most common questions we receive about Rescuezilla. If you don't find the answer here, please check <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Limitations">Rescuezilla limitations</a> and <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues">GitHub issues</a> before posting your questions or suggestions to the <a rel="nofollow" target="_blank" href="http://sourceforge.net/projects/redobackup/forums">Rescuezilla forum currently hosted on SourceForge</a>.</p>
+<p>Please take a moment to read our FAQ below, as it has the answers to the most common questions about Rescuezilla. If you don't find the answer here, please check <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Limitations">Rescuezilla limitations</a> and <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues">GitHub issues</a> before posting your questions or suggestions to the <a rel="nofollow" target="_blank" href="http://sourceforge.net/projects/redobackup/forums">Rescuezilla forum currently hosted on SourceForge</a>.</p>
 <h2>Frequently Asked Questions</h2>
 <div class="faq rounded">
 <h3>Q: Is Rescuezilla a drop-in replacement to Clonezilla?</h3>
@@ -44,7 +44,7 @@
 </div>
 <div class="faq rounded">
 <h3>Q: Does Rescuezilla support booting on EFI-only machines?</h3>
-<p>A: Rescuezilla v1.0.5 can backup and restore EFI partitions without issue. However Rescuezilla cannot boot on machines with firmware that only supports EFI and does not support legacy-boot (eg, Macs) unless worked around by first booting <a rel="nofollow" target="_blank" href="https://sourceforge.net/projects/refind/files/0.11.4">rEFInd from a flashdrive</a>. EFI support is coming in v1.0.6 (<a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/1">#1</a>)</p>
+<p>A: Rescuezilla can backup and restore EFI partitions without issue. However Rescuezilla cannot boot on machines with firmware that only supports EFI and does not support legacy-boot (eg, Macs) unless worked around by first booting <a rel="nofollow" target="_blank" href="https://sourceforge.net/projects/refind/files/0.11.4">rEFInd from a separate USB drive</a>. EFI support is coming in v1.0.6 (<a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/1">#1</a>)</p>
 </div>
 <div class="faq rounded">
 <h3>Q: Rescuezilla hangs during boot!</h3>
@@ -56,32 +56,28 @@
 </div>
 <div class="faq rounded">
 <h3>Q:&nbsp;Can I&nbsp;restore a backup to a smaller drive?</h3>
-<p>A: No. Doing so likely would require modifying the bootloader, which defeats the simplicity of Rescuezilla. Backups must be restored to a drive of equal or greater size.</p>
-<p>However, you can always restore to a larger drive, resize the partition, and back up the smaller partition if needed. Partitions can easily be resized using the included partition editor utility&nbsp;(GParted).</p>
+<p>A: No. Rescuezilla currently does not support this. Backups must be restored to a drive of equal or greater size.</p>
+<p>However, you can always restore to a larger drive, resize the partition, and back up the smaller partition if needed. Partitions can easily be resized using the included partition editor utility&nbsp;(GParted). A future version will support this.</p>
 </div>
 <div class="faq rounded">
 <h3>Q: Can I use the same Rescuezilla USB drive with many computers simultaneously?</h3>
-<p>A: Yes. Select the 'Safe Mode' menu item (which includes the 'toram' parameter) and wait for the system to boot before removing the USB drive.</p>
+<p>A: Yes. Select the 'Safe Mode' menu item (which includes the 'toram' parameter) and wait for the system to boot before removing the USB drive. Because this loads all of Rescuezilla into memory, please note the minimum RAM requirements are higher.</p>
 </div>
 <h2>Report a Bug</h2>
-<p>If you are fairly certain that you've encountered a bug, please review this checklist:</p>
+<p>If you have encountered a bug, please review this checklist:</p>
 <ul>
+    <li>Please double-check you are using the <a rel="nofollow" href="https://github.com/rescuezilla/rescuezilla/releases/latest">latest version</a> of Rescuezilla, and check whether the bug is already listed in the Bug Advisories section.</li>
     <li>Is the problem the result of the Rescuezilla program, or is it a hardware incompatibility issue that should be reported to Ubuntu Linux?</li>
-    <li>If you give us the steps, can we reproduce the error on our end?</li>
-    <li>Is the behavior an actual error, or is it merely different from how you would prefer the software work?</li>
+    <li>If you provide the steps, can the error be reproduced by the Rescuezilla maintainer?</li>
 </ul>
-<p>If you are confident that you've found an error we need to know about, we encourage you to take a moment and provide us with the information we need to fix it. Your participation ensures a better project that we all benefit from.</p>
-<p>To view the Rescuezilla <strong>log file</strong> to see the specific error message that caused your problem, read the FAQ&nbsp;above.&nbsp;Remember that Rescuezilla is simply a front end, and that <a href="http://partclone.org" target="_blank" rel="nofollow">Partclone</a> is the actual program doing the work. If your error lies with Partclone, please contact Partclone to file a bug with their team, rather than sending it to us.</p>
-<ul>
-    <li><strong>Submit a </strong><a href="https://github.com/rescuezilla/rescuezilla/issues" rel="nofollow"><strong>Bug Report</strong></a></li>
-</ul>
+<strong>Create a </strong><a href="https://github.com/rescuezilla/rescuezilla/issues" rel="nofollow"><strong>GitHub issue</strong></a> with details of the bug (please attach the logs files from the rescuezilla.log desktop folder)
 <h2>Support</h2>
 <p>If you have questions, suggestions, or requests (rather than an actual bug report) please go to the <a rel="nofollow" target="_blank" href="http://sourceforge.net/projects/redobackup/forums">Rescuezilla forum currently hosted on SourceForge</a>, where you can participate in existing discussions or open a new topic.</p>
 <div><div class="orangebox rounded">
 <h2>Like Rescuezilla? Become a Patreon today!</h2>
 <p>Contribute a dollar or more on <a target="_blank" href="https://www.patreon.com/join/rescuezilla">Patreon</a> to help fund Rescuezilla's continued development!</p>
 </div></div>  </div>
-  <div id="footer">Copyright &copy;2019 Rescuezilla.com. Released under GNU GPL license.</div>
+  <div id="footer">Copyright &copy;2020 Rescuezilla.com. Released under GNU GPL license.</div>
 </div>
 
 </center>
