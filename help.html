@@ -60,6 +60,12 @@
 <p>However, you can always restore to a larger drive, resize the partition, and back up the smaller partition if needed. Partitions can easily be resized using the included partition editor utility&nbsp;(GParted). A future version will support this.</p>
 </div>
 <div class="faq rounded">
+<h3>Q:&nbsp;I restored my Linux backup using Rescuezilla. It boots past the GRUB bootloader fully, but the Linux boot gets stuck at "Rescue Mode" login prompt. How do I fix this?</h3>
+<p>A: For modern systemd Linux environments (such as Ubuntu 18.04), the partitions listed in the /etc/fstab file <i>must</i> be present for the system to complete booting. This means if the hard drive environment does not match exactly, the system will enter Rescue Mode until the /etc/fstab is modified to only refer to the drives which are present in the system.</p>
+<p>Fixing a machine in this situation requires logging in at the Rescue Mode prompt, remounting the root partition as read/write, modifying /etc/fstab to remove the line of the partition which is no longer present, then remounting the root partition as read-only before hard rebooting the machine. There are plenty of guides on the internet to help fix this particular issue. If you need further help, post on the discussion forum and you will receive detailed assistance for as long as it takes to fix your issues.</p>
+<p>Please note, in some older Linux distributions it's not the partition's UUID that is used by /etc/fstab but the partition's device node (eg. /dev/sdc1). This means the Linux boot is expecting a hard drive connnected to an identical numbered SATA port! But dont worry, any problems can be resolved by modifying /etc/fstab. As mentioned, if you need more help please ask for it on the forum.</p>
+</div>
+<div class="faq rounded">
 <h3>Q: Can I use the same Rescuezilla USB drive with many computers simultaneously?</h3>
 <p>A: Yes. Select the 'Safe Mode' menu item (which includes the 'toram' parameter) and wait for the system to boot before removing the USB drive. Because this loads all of Rescuezilla into memory, please note the minimum RAM requirements are higher.</p>
 </div>
