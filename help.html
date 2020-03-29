@@ -47,6 +47,10 @@
 <p>A: Rescuezilla can backup and restore EFI partitions without issue. However Rescuezilla cannot boot on machines with firmware that only supports EFI and does not support legacy-boot (eg, Macs) unless worked around by first booting <a rel="nofollow" target="_blank" href="https://sourceforge.net/projects/refind/files/0.11.4">rEFInd from a separate USB drive</a>. EFI support is coming in v1.0.6 (<a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/1">#1</a>)</p>
 </div>
 <div class="faq rounded">
+  <h3>Q: I want to surgically move a partition from one machine to another. Is Rescuezilla suitable for me?</h3>
+  <p>A: No, absolutely not. As stated in the <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Limitations">Rescuezilla limitations page</a>, <b>Rescuezilla only officially supports backing up and restoring entire disks. Individual partition backup and restore is very immature right now and is not recommended.</b> This will be improved upon as part of task <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/46">#46</a>.</p>
+  </div>
+<div class="faq rounded">
 <h3>Q: Rescuezilla hangs during boot!</h3>
 <p>A: Some computers boot extremely slow. Give it a minute, especially if the computer continues to read from the USB drive. If you only experience this when booting from USB, it is possible that in the BIOS, your USB&nbsp;drive may need to be identified as USB-HDD, USB-ZIP, or some other setting that may improve performance.</p>
 </div>
