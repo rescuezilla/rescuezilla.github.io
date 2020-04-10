@@ -54,6 +54,8 @@
 <p>You'll need to write the image to a USB using a program such as <a rel="nofollow" target="_blank" href="https://www.balena.io/etcher/">balenaEtcher</a> which works on Windows, Mac and Linux.</p>
 <h3>3. Reboot your computer</h3>
 <p>Rescuezilla does not run from inside Windows or any other operating system <strong>because it is one</strong><strong>!</strong> You must restart your computer with the USB inserted in order to use Rescuezilla. To boot from the USB, you may need to press a key such as <strong>F8</strong> or <strong>F12 </strong>while your computer is starting up.</p>
+<h3>4. Speedup if more than 16GB RAM present</h3>
+<p>Due to a bug internal to Linux, <strong>if you have 16GB RAM of greater your backup/restore speed will be VERY slow unless you press 'tab' at the boot menu and modify the line that pops up so it ends in "quiet mem=9G splash --" instead of "quiet splash --"</strong> then press enter. The next version of Rescuezilla will have a permanent fix for this issue.</p>
 </div>
 <p>After the USB&nbsp;boots, you will have a mini operating system loaded into memory which will launch Rescuezilla. It will not install anything to your hard drive, and you decide which hard drive to save backup images.</p>
 <h2>System Requirements</h2>

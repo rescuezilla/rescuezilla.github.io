@@ -49,14 +49,10 @@
 <div class="faq rounded">
   <h3>Q: I want to surgically move a partition from one machine to another. Is Rescuezilla suitable for me?</h3>
   <p>A: No, absolutely not. As stated in the <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Limitations">Rescuezilla limitations page</a>, <b>Rescuezilla only officially supports backing up and restoring entire disks. Individual partition backup and restore is very immature right now and is not recommended.</b> This will be improved upon as part of task <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/46">#46</a>.</p>
-  </div>
-<div class="faq rounded">
-<h3>Q: Rescuezilla hangs during boot!</h3>
-<p>A: Some computers boot extremely slow. Give it a minute, especially if the computer continues to read from the USB drive. If you only experience this when booting from USB, it is possible that in the BIOS, your USB&nbsp;drive may need to be identified as USB-HDD, USB-ZIP, or some other setting that may improve performance.</p>
 </div>
 <div class="faq rounded">
-<h3>Q:&nbsp;My backup froze at XX% and no error was given! What happened?</h3>
-<p>A: Close the backup program. Open the redobackup.logs directory on desktop and view the most recent log file to see what went wrong. Then file a bug report and upload the log file. Remember that Rescuezilla is a frontend to the <a rel="nofollow" target="_blank" href="http://partclone.org">Partclone</a> project, so if you can run partclone successfully, Rescuezilla should work for you.&nbsp;Also remember that if the drive is filled or otherwise becomes inaccessible (e.g. loss of network connection)&nbsp;while a backup is being saved or restored, the process will fail.</p>
+<h3>Q: Rescuezilla is running VERY slow for me. How do I fix this?</h3>
+<p>A: On machines with 16GB of RAM or greater, backup/restore speeds are slow due to a <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/15#issuecomment-611541952">bug in the Linux's memory allocator</a>. To temporarily fix this, press 'tab' at the boot menu and modifying the line that pops up so it ends in "quiet mem=10G splash --" instead of "quiet splash --". Then press enter and after it finishes booting do your backup/restore operations as normal. The next version of Rescuezilla will provide a permanent fix for this issue.</p>
 </div>
 <div class="faq rounded">
 <h3>Q:&nbsp;Can I&nbsp;restore a backup to a smaller drive?</h3>
