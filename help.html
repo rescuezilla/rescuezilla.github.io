@@ -44,7 +44,7 @@
 </div>
 <div class="faq rounded">
 <h3>Q: Does Rescuezilla support booting on EFI-only machines?</h3>
-<p>A: Rescuezilla can backup and restore EFI partitions without issue. However Rescuezilla cannot boot on machines with firmware that only supports EFI and does not support legacy-boot (eg, Macs) unless worked around by first booting <a rel="nofollow" target="_blank" href="https://sourceforge.net/projects/refind/files/0.11.4">rEFInd from a separate USB drive</a>. EFI support is coming in v1.0.6 (<a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/1">#1</a>)</p>
+<p>A: Rescuezilla can <strong>backup and restore EFI partitions</strong> without issue. However <strong>Rescuezilla cannot boot on machines with firmware that only supports EFI and does not support legacy-boot (eg, Macs) unless using a workaround</strong>: Download <a rel="nofollow" target="_blank" href="https://sourceforge.net/projects/refind/files/0.12.0/refind-flashdrive-0.12.0.zip/download">rEFInd</a> and extract the ZIP archive. Then use balenaEtcher to flash the image named "refind-flashdrive-0.12.0.img" to a <emp>second</emp></emp> USB stick. Restart your computer and use the keyboard to boot from the rEFInd USB stick, then use the rEFInd menu to boot your Rescuezilla USB stick. The next Rescuezilla version will support EFI boot (<a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/1">#1</a>).</p>
 </div>
 <div class="faq rounded">
   <h3>Q: I want to surgically move a partition from one machine to another. Is Rescuezilla suitable for me?</h3>
