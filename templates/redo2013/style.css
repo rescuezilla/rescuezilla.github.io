@@ -114,6 +114,10 @@ form {
 .menu_current {
 	color: orange !important;
 	}
+.menu_patreon {
+	/* Patreon logo color */
+	color: #F96854  !important;
+	}
 #features td img {
 	margin: 5px 20px 5px 0px;
 	}
