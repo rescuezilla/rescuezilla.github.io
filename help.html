@@ -41,7 +41,7 @@
       <p><strong>Contribute $1/month on the crowdfunding website  <a target="_blank" href="https://www.patreon.com/join/rescuezilla">Patreon</a> so Rescuezilla can continue to be developed</strong></p>
     </div></div>
     <a class="section_anchor" id="wb_9" name="wb_9"></a><h1><img width="128" height="128" align="right" src="./media/icons/help.png" style="margin-left: 20px;" alt="" />Need Help?</h1>
-<p>Please take a moment to read our FAQ below, as it has the answers to the most common questions about Rescuezilla. If you don't find the answer here, please check <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Limitations">Rescuezilla limitations</a> and <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues">GitHub issues</a> before posting your questions or suggestions to the <a rel="nofollow" target="_blank" href="http://sourceforge.net/projects/redobackup/forums">Rescuezilla forum currently hosted on SourceForge</a>.</p>
+<p>Please take a moment to read our FAQ below, as it has the answers to the most common questions about Rescuezilla. If you don't find the answer here, please check <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Limitations">Rescuezilla limitations</a> and <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues">GitHub issues</a> before posting your questions or suggestions to the <a rel="nofollow" target="_blank" href="http://sourceforge.net/projects/redobackup/forums">Rescuezilla forum currently hosted on SourceForge</a>.</p>
 <h2>Frequently Asked Questions</h2>
 <div class="faq rounded">
 <h3>Q: Is Rescuezilla a drop-in replacement to Clonezilla?</h3>
@@ -49,15 +49,15 @@
 </div>
 <div class="faq rounded">
 <h3>Q: Does Rescuezilla support booting on EFI-only machines?</h3>
-<p>A: Rescuezilla can <strong>backup and restore EFI partitions</strong> without issue. However <strong>Rescuezilla cannot boot on machines with firmware that only supports EFI and does not support legacy-boot (eg, Macs) unless using a workaround</strong>: Download <a rel="nofollow" target="_blank" href="https://sourceforge.net/projects/refind/files/0.12.0/refind-flashdrive-0.12.0.zip/download">rEFInd</a> and extract the ZIP archive. Then use balenaEtcher to flash the image named "refind-flashdrive-0.12.0.img" to a <emp>second</emp></emp> USB stick. Restart your computer and use the keyboard to boot from the rEFInd USB stick, then use the rEFInd menu to boot your Rescuezilla USB stick. The next Rescuezilla version will support EFI boot (<a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/1">#1</a>).</p>
+<p>A: Rescuezilla can <strong>backup and restore EFI partitions</strong> without issue. However <strong>Rescuezilla cannot boot on machines with firmware that only supports EFI and does not support legacy-boot (eg, Macs) unless using a workaround</strong>: Download <a rel="nofollow" target="_blank" href="https://sourceforge.net/projects/refind/files/0.12.0/refind-flashdrive-0.12.0.zip/download">rEFInd</a> and extract the ZIP archive. Then use balenaEtcher to flash the image named "refind-flashdrive-0.12.0.img" to a <emp>second</emp></emp> USB stick. Restart your computer and use the keyboard to boot from the rEFInd USB stick, then use the rEFInd menu to boot your Rescuezilla USB stick. The next Rescuezilla version will support EFI boot (<a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/1">#1</a>).</p>
 </div>
 <div class="faq rounded">
   <h3>Q: I want to surgically move a partition from one machine to another. Is Rescuezilla suitable for me?</h3>
-  <p>A: No, absolutely not. As stated in the <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Limitations">Rescuezilla limitations page</a>, <b>Rescuezilla only officially supports backing up and restoring entire disks. Individual partition backup and restore is very immature right now and is not recommended.</b> This will be improved upon as part of task <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/46">#46</a>.</p>
+  <p>A: No, absolutely not. As stated in the <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Limitations">Rescuezilla limitations page</a>, <b>Rescuezilla only officially supports backing up and restoring entire disks. Individual partition backup and restore is very immature right now and is not recommended.</b> This will be improved upon as part of task <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/46">#46</a>.</p>
 </div>
 <div class="faq rounded">
 <h3>Q: Rescuezilla is running VERY slow for me. How do I fix this?</h3>
-<p>A: On machines with 16GB of RAM or greater, backup/restore speeds are slow due to a <a rel="nofollow" target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/15#issuecomment-611541952">bug in the Linux's memory allocator</a>. To temporarily fix this, press 'tab' at the boot menu and modifying the line that pops up so it ends in "quiet mem=10G splash --" instead of "quiet splash --". Then press enter and after it finishes booting do your backup/restore operations as normal. The next version of Rescuezilla will provide a permanent fix for this issue.</p>
+<p>A: On machines with 16GB of RAM or greater, backup/restore speeds are slow due to a <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/15#issuecomment-611541952">bug in the Linux's memory allocator</a>. To temporarily fix this, press 'tab' at the boot menu and modifying the line that pops up so it ends in "quiet mem=10G splash --" instead of "quiet splash --". Then press enter and after it finishes booting do your backup/restore operations as normal. The next version of Rescuezilla will provide a permanent fix for this issue.</p>
 </div>
 <div class="faq rounded">
 <h3>Q:&nbsp;Can I&nbsp;restore a backup to a smaller drive?</h3>
@@ -77,7 +77,7 @@
 <h2>Report a Bug</h2>
 <p>If you have encountered a bug, please review this checklist:</p>
 <ul>
-    <li>Please double-check you are using the <a rel="nofollow" href="https://github.com/rescuezilla/rescuezilla/releases/latest">latest version</a> of Rescuezilla, and check whether the bug is already listed in the Bug Advisories section.</li>
+    <li>Please double-check you are using the <a href="https://github.com/rescuezilla/rescuezilla/releases/latest">latest version</a> of Rescuezilla, and check whether the bug is already listed in the Bug Advisories section.</li>
     <li>Is the problem the result of the Rescuezilla program, or is it a hardware incompatibility issue that should be reported to Ubuntu Linux?</li>
     <li>If you provide the steps, can the error be reproduced by the Rescuezilla maintainer?</li>
 </ul>
