@@ -101,15 +101,6 @@ form {
 	color: #E1E1E9;
 	text-decoration: none;
 	}
-#tagline {
-	float: left;
-	clear: both;
-	margin: 10px 0px 0px 220px;
-	color: white;
-	font-size: 22px;
-	font-weight: normal;
-	text-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
-	}
 #footer {
 	background: url(images/redo-footer.png) bottom center no-repeat;
 	width: 960px;
