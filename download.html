@@ -46,8 +46,9 @@
 <h2><strong>Getting Started</strong></h2>
 <div class="faq rounded">
 <h3>1. Download the latest live image</h3>
-<p>Download the latest version of Rescuezilla v1.0.5.1: <strong><a href="https://github.com/rescuezilla/rescuezilla/releases/download/1.0.5.1/redobackup-livecd-1.0.5.1.iso">here</a></strong> (released on 2020-03-24) <br />
-<p>Read <a href="https://github.com/rescuezilla/rescuezilla/releases/latest">what's new, and any bug advisories</a>.
+<p>Download the latest 64-bit version of Rescuezilla: <strong><a href="https://github.com/rescuezilla/rescuezilla/releases/download/1.0.6/rescuezilla-1.0.6-64bit.iso">rescuezilla-1.0.6-64bit.iso</a></strong> (recommended).</p>
+<p>Read <a href="https://github.com/rescuezilla/rescuezilla/releases/latest">what's new, and any bug advisories</a>. For computers made <em>before</em> ~2007, a <strong><a href="https://github.com/rescuezilla/rescuezilla/releases/download/1.0.6/rescuezilla-1.0.6-32bit.iso">32-bit</a></strong> version is available.</p>
+<p>It has been reported that Rescuezilla v1.0.6 64-bit takes a few minutes to shutdown. This issue is <a href="https://github.com/rescuezilla/rescuezilla/issues/87">being investigated</a>. The 32-bit version continues to have near-instantaneous shutdown speed, so if you have less than 16GB RAM  you may prefer to use that version for now. Sorry for any inconvenience.</p>
 </p>
 <h3>2. Write the image to a USB</h3>
 <p>You'll need to write the image to a USB drive using a program such as <a target="_blank" href="https://www.balena.io/etcher/">balenaEtcher</a> which works on Windows, Mac and Linux. <strong>This step will completely erase any data on your USB stick.</strong></strong></p>
@@ -55,8 +56,6 @@
 <p>Consider contributing $1/month on the crowdfunding website  <a target="_blank" href="https://www.patreon.com/join/rescuezilla">Patreon</a> so Rescuezilla can continue to be developed.</p>
 <h3>4. Reboot your computer</h3>
 <p>Rescuezilla does not run from inside Windows or any other operating system <strong>because it is one</strong><strong>!</strong> You must restart your computer with the USB inserted in order to use Rescuezilla. To boot from the USB, you may need to press a key such as <strong>F8</strong> or <strong>F12 </strong>while your computer is starting up.</p>
-<h3>5. Speedup if more than 16GB RAM present</h3>
-<p>Due to a bug internal to Linux, <strong>if you have 16GB RAM of greater your backup/restore speed will be VERY slow unless you press 'tab' at the boot menu and modify the line that pops up so it ends in "quiet mem=9G splash --" instead of "quiet splash --"</strong> then press enter. Rescuezilla v1.0.6 resolves this by providing a 64-bit version and will be released shortly.</p>
 </div>
 <p>After the USB&nbsp;boots, you will have a mini operating system loaded into memory which will launch Rescuezilla. It will not install anything to your hard drive, and you decide which hard drive to save backup images.</p>
 <h2>System Requirements</h2>
