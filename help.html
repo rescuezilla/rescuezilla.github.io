@@ -49,12 +49,16 @@
   <p>A: Rescuezilla is currently only suitable for backup and restore of <em>whole hard drives</em>. It is <strong>not</strong> yet well-suited for restoring single partitions individually, as might be desired for users with dual-boot systems. Even with this limitation Rescuezilla is still useful for many end-users. The tracking number for this task is <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/46">#46</a> and it will be completed for Rescuezilla v1.0.7 (to be released in a few months).</p>
 </div>
 <div class="faq rounded">
-  <h3>Q: I want to surgically move a partition from one machine to another. Is Rescuezilla suitable for me?</h3>
+  <h3>Q: I want to surgically move a partition from one drive to another. Is Rescuezilla suitable for me?</h3>
   <p>A: No, absolutely not. Again, as stated in the <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/Rescuezilla-Limitations">Rescuezilla limitations page</a>, <strong>Rescuezilla currently only officially supports backing up and restoring entire disks. Individual partition backup and restore is very immature right now and is not recommended.</strong> Rescuezilla v1.0.7 will improve this.</p>
 </div>
 <div class="faq rounded">
 <h3>Q: Is Rescuezilla a drop-in replacement to Clonezilla?</h3>
 <p>A: No, not yet. However, Rescuezilla v1.0.7 will support the image format used by Clonezilla. This will mean backups created by Clonezilla will be able to be restored with Rescuezilla (and vice versa). The tracking number for this task is <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/4">#4</a>. Please support Rescuezilla by contributing $1/month on the crowdfunding website <a target="_blank" href="https://www.patreon.com/join/rescuezilla">Patreon</a> to support the implementation of this feature (and many others).</p>
+</div>
+<div class="faq rounded">
+  <h3>Q: Can I restore a backup to a smaller drive?</h3>
+  <p>A: No, Rescuezilla currently does not support this. Rescuezilla v1.0.6 only supports restoring backups to a drive of <strong>equal or greater size.</strong></strong></p>
 </div>
 <div class="faq rounded">
   <h3>Q: Does Rescuezilla support EFI?</h3>
@@ -64,11 +68,6 @@
   <h3>Q: Is Rescuezilla related to Redo Rescue?</h3>
   <p>A: Kind of. Both are independent projects but originally built upon the same base. Rescuezilla is a methodical revival an old application named <em>Redo Backup and Recovery</em> which was abandoned by its original author between 2012 and 2020 (leaving hundreds of open forum threads including many users struggling to restore important data without any support being provided). Since the initial release in November 2019, the Rescuezilla developer has systematically unified a number of unofficial customized <em>Redo Backup and Recovery</em> versions (including language translations) into a single version that, after many attempts to contact the original author with the changes, was reluctantly released under the new name &ldquo;Rescuezilla&rdquo;. The Rescuezilla developer continues to release new versions to provide backwards compatibility, bug fixes, new features and user support for everybody to benefit from, including a <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/projects/3">major upgrade</a> planned for v1.0.7.</p>
   <p>In June 2020, the original <em>Redo Backup and Recovery</em> author suddenly resurfaced after a 7.5 year absence and released a new version named &ldquo;<a target="_blank" href="https://sourceforge.net/p/redobackup/discussion/1169663/thread/d0e37c4750/">Redo Rescue</a>&rdquo; with some features that were planned for Rescuezilla v1.0.7. Despite this, Rescuezilla will continue to be actively developed, and from v1.0.7, Rescuezilla will always maintain complete feature parity and restore compatibility with Redo Rescue, in addition to the already planned Clonezilla image format support and other Rescuezilla-specific enhancements and improvements.</p>
-</div>
-<div class="faq rounded">
-<h3>Q: Can I restore a backup to a smaller drive?</h3>
-<p>A: No, Rescuezilla currently does not support this. Backups must be restored to a drive of equal or greater size.</p>
-<p>However, you can always restore to a larger drive, resize the partition, and back up the smaller partition if needed. Partitions can easily be resized using the included partition editor utility&nbsp;(GParted). A future version will support this.</p>
 </div>
 <div class="faq rounded">
   <h3>Q: Rescuezilla v1.0.6 64-bit takes a long time to shutdown. How do I fix this?</h3>
