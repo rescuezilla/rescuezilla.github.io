@@ -49,6 +49,10 @@
   <p>Clonezilla will always have more options to tweak than Rescuezilla, but Rescuezilla can still restore images created with these options. For example, in Clonezilla you can go into "Expert mode" and select from 10 different compression algorithms, and change the imaging tool from the default "partclone" to others like "partimage", "ntfsclone" or "dd". Rescuezilla might add some of these advanced configuration options, but until then you can simply create your backups using Clonezilla with whatever advanced options you like and then restore them using Rescuezilla.</p>
 </div>
 <div class="faq rounded">
+  <h3>Q: Does Rescuezilla support cloning?</h3>
+  <p>A: Unfortunately, Rescuezilla does not yet support "cloning" (which Clonezilla calls "device-device" mode). Rescuezilla currently only supports "imaging" (what Clonezilla calls "device-image" mode). In other words, a backup operation copies your harddrive to files that need to be stored on a hard drive at least temporarily before it can be restored. This feature request is being tracked by <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/47">GitHub task #47</a>.</p>
+</div>
+<div class="faq rounded">
   <h3>Q: Is Rescuezilla related to Redo Rescue?</h3>
   <p>A: Kind of. Both are independent projects originally built upon the same base, but have different goals and methadologies so are developed separately.</p>
   <p>Launched in November 2019, Rescuezilla is an fork of an old application named <em>Redo Backup and Recovery</em> after it had been abandoned by its original author since 2012 (leaving hundreds of open forum threads including many users struggling to restore important data without any support being provided).</p>
