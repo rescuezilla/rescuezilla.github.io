@@ -54,8 +54,8 @@
 </div>
 <div class="faq rounded">
   <h3>Q: Rescuezilla backup and restore is running VERY slow for me. How do I fix this?</h3>
-  <p>A: Multiple users <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/125">have reported Rescuezilla v2.0 operations running at just ~1.5GB/minute</a> (almost 3 times slower than the previous release). These report of slow operations are being investigated, and will be resolved by a new release within 2 weeks.</p>
-  <p>Also, on machines with 16GB of RAM or greater, backup/restore speeds become intolerably slow when using the 32-bit version of Resecuezilla. On machines 64-bit machines with 16GB of RAM or greater, always use the 64-bit version of Rescuezilla.</p>
+    <p>A: Rescuezilla v2.0 had an issue where image compression was being done as a single-thread operation instead of multithreaded. This has been resolved for Rescuezilla v2.1.</p>
+    <p>Also, on machines with 16GB of RAM or greater, backup/restore speeds become intolerably slow when using the 32-bit version of Resecuezilla. On machines 64-bit machines with 16GB of RAM or greater, always use the 64-bit version of Rescuezilla.</p>
 </div>
 <div class="faq rounded">
   <h3>Q: Is Rescuezilla related to Redo Rescue?</h3>
@@ -73,6 +73,7 @@
 <div class="faq rounded">
   <h3>Q: I am having trouble connecting to a network shared directory using SMB/CIFS?</h3>
   <p>A: First make sure the fields have the correct UNC path (eg "\\fileserver\johnsmith") and username/password. Some network shares may not support the default SMB 3.1.1 protocol, so you may need to enter '2.1' or even '1.0' in the version field.</p>
+  <p>Rescuezilla v2.0 had an issue where the version field didn't work correctly, but this has been resolved with Rescuezilla v2.1.</p>
 </div>
 <div class="faq rounded">
   <h3>Q: How do I install new software packages?</h3>
