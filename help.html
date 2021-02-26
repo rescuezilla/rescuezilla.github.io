@@ -73,6 +73,7 @@
 <div class="faq rounded">
   <h3>Q: I am having trouble connecting to a network shared folder using SMB/CIFS?</h3>
   <p>A: First make sure the fields have the correct UNC path (eg "\\fileserver\johnsmith") and username/password. Some network shares may not support the default SMB 3.1.1 protocol, so you may need to enter '2.1' or even '1.0' in the version field.</p>
+  <p>It has been reported that to connect to an anonymous/unauthenticated shared folder the username field needs to be filled with a single asterisk character (&#42), despite the field being marked as optional. This will be improved in the next version.</p>
   <p>Rescuezilla v2.0 had an issue where the version field didn't work correctly, but this has been resolved on Rescuezilla v2.1 and newer.</p>
 </div>
 <div class="faq rounded">
