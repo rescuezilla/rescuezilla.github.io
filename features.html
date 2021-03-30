@@ -44,7 +44,7 @@
         <p><strong>Consider giving the project a like on <a target="_blank" href="https://alternativeto.net/software/rescuezilla/reviews/">AlternativeTo</a> so that more people can discover it! :-)</strong></p>
         </div></div>
     <h1>Features</h1>
-<p>Rescuezilla is the most advanced recovery solution. It is small, fast, and very easy to use, even for everyday computer users.</p>
+<p>Rescuezilla is a backup/recovery solution. It's a Clonezilla GUI that's fast, feature-packed and very easy-to-use, even for everyday computer users.</p>
 <table width="100%" cellspacing="1" cellpadding="1" border="0" id="features">
     <tbody>
         <tr>
@@ -58,23 +58,30 @@
             <td><img width="128" height="128" alt="" src="./media/icons/gui.png" /></td>
             <td>
             <h2>It's Easy-To-Use</h2>
-            <p>Rescuezilla provides a point-and-click interface with network access and a complete operating system (via Ubuntu). Open other applications while your system backup is being transferred.</p>
+            <p>Rescuezilla provides a point-and-click interface with network access and a complete operating system (based on the Ubuntu GNU/Linux distribution). Open other applications while your system backup is being transferred.</p>
             </td>
         </tr>
         <tr>
             <td><img width="128" height="128" alt="" src="./media/icons/clonezilla.png" /></td>
             <td>
             <h2>Fully interoperable with Clonezilla</h2>
-            <p>Rescuezilla has been carefully developed to be fully interoperable with the industry-standard Clonezilla, trusted by tens of millions of individuals and businesses for almost 20 years. Backup images made using Clonezilla can be restored with Rescuezilla, and vice versa!</p>
-            </td>
+            <p>Rescuezilla is the Clonezilla GUI (graphical user interface) that you've always wanted. It is carefully developed to be fully interoperable with the industry-standard Clonezilla, trusted by tens of millions of individuals and businesses for almost 20 years. Backup images made using Clonezilla can be restored with Rescuezilla, and vice versa!</p>
+        </td>
+        </tr>
+        <tr>
+            <td><img width="128" height="128" alt="" src="./media/icons/compatibility.png" /></td>
+            <td>
+            <h2>Works with virtual machine images</h2>
+            <p>Rescuezilla works with images created by virtual machines: VirtualBox (VDI), VMWare (VMDK), Hyper-V (VHDx), Qemu (QCOW2), raw (.dd, .img), in addition to all known open-source imaging frontends (including Clonezilla). For more information checkout the 'compatibility' section of  <a href="https://github.com/rescuezilla/rescuezilla/releases/latest">Rescuezilla GitHub release page</a>.</p>
+        </td>
         </tr>
         <tr>
             <td><img width="128" height="128" alt="" src="./media/icons/image_explorer.png" /></td>
             <td>
             <h2>Extract files from your backup images (beta)</h2>
-            <p>Rescuezilla makes it easy to access your files that are saved within your backup. You won't need to struggle with the command-line!</p>
-            <p>This feature is currently in beta. It's extremely performant for large <em>uncompressed</em> images created by Clonezilla, but is slow for large images using gzip compression (which is what Clonezilla and Rescuezilla currently use by default).</p>
-            </td>
+            <p>Rescuezilla makes it easy to access your files that are saved within all supported backup image formats, including virtual machine images. You won't need to struggle with the command-line!</p>
+            <p>It's great for large <em>uncompressed</em> images (including virtual machine images), but will be too slow for larger images using gzip or zstandard compression until Rescuezilla implements <a href="https://github.com/rescuezilla/rescuezilla/issues/153#issuecomment-763321667">indexed access using ratarmount (task #153)</a>.</p>
+        </td>
         </tr>
         <tr>
             <td><img width="128" height="128" alt="" src="./media/icons/clock.png" /></td>

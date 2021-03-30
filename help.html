@@ -46,37 +46,21 @@
 <p>Please check if your question is answered below. If you don't find the answer here, please search the <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues">GitHub issues</a> before proceeding to the <a target="_blank" href="https://sourceforge.net/p/rescuezilla/discussion/">Rescuezilla Sourceforge forum</a> where world-class support is provided to as many users as possible.</p>
 <h2>Frequently Asked Questions</h2>
 <div class="faq rounded">
-  <h3>Is Rescuezilla a drop-in replacement to Clonezilla?</h3>
-  <p>Yes. Since v2.0, Rescuezilla can restore backups created by Clonezilla, and backups created by Rescuezilla can be restored using Clonezilla.</p>
-  <p>Clonezilla will always have more options to tweak than Rescuezilla, but Rescuezilla can still restore images created with these options. For example, in Clonezilla you can go into "Expert mode" and select from 10 different compression algorithms, and change the imaging tool from the default "partclone" to others like "partimage", "ntfsclone" or "dd". Rescuezilla might add some of these advanced configuration options, but until then you can simply create your backups using Clonezilla with whatever advanced options you like and then restore them using Rescuezilla.</p>
+  <h3>Q: Does Rescuezilla support restoring and cloning to <em>smaller</em> disk? Eg, 1000GB HDD to 500GB SSD</h3>
+  <p>Restoring to smaller disks requires a <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/HOWTO:-Restoring-to-a-smaller-disk.-Eg,-1000GB-HDD-to-500GB-SSD">workaround</a> that first uses the GParted Partition Editor to first resize the source disk. If you are not familiar with GParted, consider creating an unmodified backup image first and be extremely careful.</p>
+  <p>I have determined a pathway to add <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/18#issuecomment-834179224">automatically restoring to partitions smaller than original (task #18)</a>, but it won't be completed for some time.</p>
 </div>
 <div class="faq rounded">
-  <h3>Q: Does Rescuezilla support cloning?</h3>
-  <p>A: Unfortunately, Rescuezilla does not yet support "cloning" (which Clonezilla calls "device-device" mode). Rescuezilla currently only supports "imaging" (what Clonezilla calls "device-image" mode). In other words, a backup operation copies your harddrive to files that need to be stored on a hard drive at least temporarily before it can be restored. This feature request is being tracked by <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/47">GitHub task #47</a>.</p>
-</div>
-<div class="faq rounded">
-  <h3>Q: Rescuezilla backup and restore is running VERY slow for me. How do I fix this?</h3>
-    <p>A: Rescuezilla v2.0 had an issue where image compression was being done as a single-thread operation instead of multithreaded. This has been resolved on Rescuezilla v2.1 and newer.</p>
-    <p>Also, on machines with 16GB of RAM or greater, backup/restore speeds become intolerably slow when using the 32-bit version of Resecuezilla. On machines 64-bit machines with 16GB of RAM or greater, always use the 64-bit version of Rescuezilla.</p>
-</div>
-<div class="faq rounded">
-  <h3>Q: Is Rescuezilla related to Redo Rescue?</h3>
-  <p>A: Kind of. Both are independent projects originally built upon the same base, but have different goals and methadologies so are developed separately.</p>
-  <p>Launched in November 2019, Rescuezilla is a fork of an old application named <em>Redo Backup and Recovery</em> after it had been abandoned by its original author since 2012 (leaving hundreds of open forum threads including many users struggling to restore important data without any support being provided).</p>
-  <p>In June 2020, the original <em>Redo Backup and Recovery</em> author suddenly resurfaced after a 7.5 year absence and released a new version named &ldquo;<a target="_blank" href="https://sourceforge.net/p/redobackup/discussion/general/thread/d0e37c4750/">Redo Rescue</a>&rdquo; and deleted all of the user-support that Rescuezilla was systematically providing to the hundreds of open forum threads.</p>
-  <p>Rescuezilla is fully interoperable with Clonezilla and has a much broader goals, including eventually adding support for Redo Rescue image format.</p>
+  <h3>Q: I am having trouble connecting to a SMB/CIFS (Samba) network shared folder</h3>
+  <p>A: First make sure the server field has the correct UNC path (eg "\\fileserver\Users\fred\MySharedFolder"), username and password.</p>
+  <p>Some network shares may not support the default SMB 3.1.1 protocol, so <strong>you should try '2.1' or even '1.0' in the version field. This is often the case with NAS devices and older versions of Windows.</strong></p>
+  <p>Please make sure you're using the latest version of Rescuezilla, because there has been improvements around shared folders.</strong></p>
 </div>
 <div class="faq rounded">
 <h3>Q: I restored my Linux backup using Rescuezilla. It boots past the GRUB bootloader fully, but the Linux boot gets stuck at "Rescue Mode" login prompt. How do I fix this?</h3>
 <p>A: For modern systemd Linux environments (such as Ubuntu 18.04), the partitions listed in the /etc/fstab file <i>must</i> be present for the system to complete booting. This means if the hard drive environment does not match exactly, the system will enter Rescue Mode until the /etc/fstab is modified to only refer to the drives which are present in the system.</p>
 <p>Fixing a machine in this situation requires logging in at the Rescue Mode prompt, remounting the root partition as read/write, modifying /etc/fstab to remove the line of the partition which is no longer present, then remounting the root partition as read-only before hard rebooting the machine. There are plenty of guides on the internet to help fix this particular issue. If you need further help, post on the <a target="_blank" href="https://sourceforge.net/p/rescuezilla/discussion/">support forum</a> and you will receive detailed assistance for as long as it takes to fix your issues.</p>
 <p>Please note, in some older Linux distributions it's not the partition's UUID that is used by /etc/fstab but the partition's device node (eg. /dev/sdc1). This means the Linux boot is expecting a hard drive connnected to an identical numbered SATA port! But don't worry, any problems can be resolved by modifying /etc/fstab. As mentioned, if you need more help please ask for it on the <a target="_blank" href="https://sourceforge.net/p/rescuezilla/discussion/">support forum</a>.</p>
-</div>
-<div class="faq rounded">
-  <h3>Q: I am having trouble connecting to a network shared folder using SMB/CIFS?</h3>
-  <p>A: First make sure the fields have the correct UNC path (eg "\\fileserver\johnsmith") and username/password. Some network shares may not support the default SMB 3.1.1 protocol, so you may need to enter '2.1' or even '1.0' in the version field.</p>
-  <p>It has been reported that to connect to an anonymous/unauthenticated shared folder the username field needs to be filled with a single asterisk character (&#42), despite the field being marked as optional. This will be improved in the next version.</p>
-  <p>Rescuezilla v2.0 had an issue where the version field didn't work correctly, but this has been resolved on Rescuezilla v2.1 and newer.</p>
 </div>
 <div class="faq rounded">
   <h3>Q: How do I install new software packages?</h3>
@@ -96,6 +80,7 @@
     <li>Please double-check you are using the <a href="https://github.com/rescuezilla/rescuezilla/releases/latest">latest version</a> of Rescuezilla, and check whether the bug is already listed in the Bug Advisories table.</li>
     <li>Is the problem the result of the Rescuezilla program, or is it a hardware incompatibility issue that should be reported to Ubuntu Linux?</li>
     <li>If you provide the steps, can the error be reproduced by the Rescuezilla developer?</li>
+    <li>If you want to take a screenshot, you can do this by pressing the Print Screen key (use Alt - Print Screen to capture only the current window). The screenshot application can directly upload to Imgur, so you can easily share the public URL in your bug report.</li>
 </ul>
 <strong>Create a </strong><a href="https://github.com/rescuezilla/rescuezilla/issues" rel="nofollow"><strong>GitHub issue</strong></a> with details of the bug (please attach the log files from your backup folder, and provide as much information as possible)
 <h2>Support</h2>
