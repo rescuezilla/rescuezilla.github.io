@@ -46,6 +46,11 @@
 <p>Please check if your question is answered below. If you don't find the answer here, please search the <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues">GitHub issues</a> before proceeding to the <a target="_blank" href="https://sourceforge.net/p/rescuezilla/discussion/">Rescuezilla Sourceforge forum</a> where world-class support is provided to as many users as possible.</p>
 <h2>Frequently Asked Questions</h2>
 <div class="faq rounded">
+  <h3>Q: When I boot the Rescuezilla USB stick after the language selection screen it is starting up but consistently reaches a blank screen rather than the desktop.</h3>
+  <p>If the Rescuezilla USB stick fails to boot to the desktop, try choosing the 'Graphical Fallback Mode' item from the boot menu (after selecting a language).</p>
+  <p>Graphical Fallback Mode at least provides a low-resolution Rescuezilla environment on systems where the graphics drivers may not be available.</p>
+</div>
+<div class="faq rounded">
   <h3>Q: Does Rescuezilla support restoring and cloning to <em>smaller</em> disk? Eg, 1000GB HDD to 500GB SSD</h3>
   <p>Restoring to smaller disks requires a <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/HOWTO:-Restoring-to-a-smaller-disk.-Eg,-1000GB-HDD-to-500GB-SSD">workaround</a> that first uses the GParted Partition Editor to first resize the source disk. If you are not familiar with GParted, consider creating an unmodified backup image first and be extremely careful.</p>
   <p>I have determined a pathway to add <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/18#issuecomment-834179224">automatically restoring to partitions smaller than original (task #18)</a>, but it won't be completed for some time.</p>
