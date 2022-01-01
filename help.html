@@ -51,6 +51,10 @@
   <p>Graphical Fallback Mode at least provides a low-resolution Rescuezilla environment on systems where the graphics drivers may not be available. Another alternative is to try the Rescuezilla v2.3 version based on the Ubuntu 20.04 (Focal) operating system which may be able to boot more reliably than the default Ubuntu 21.10 version. You can find this download at the <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/releases/latest">bottom of the GitHub release page under the 'Assets' section</a>.</p>
 </div>
 <div class="faq rounded">
+  <h3>Q: Cloning gets stuck at 0% and makes no progress!!</h3>
+  <p>This issue has been fixed in Rescuezilla v2.3.1. Sorry for the oversight, I introduced the issue in v2.3.0. Rescuezilla's automated integration testing suite will help prevent such regressions in the future.</p>
+</div>
+<div class="faq rounded">
   <h3>Q: Does Rescuezilla support restoring and cloning to <em>smaller</em> disk? Eg, 1000GB HDD to 500GB SSD</h3>
   <p>Restoring to smaller disks requires a <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/wiki/HOWTO:-Restoring-to-a-smaller-disk.-Eg,-1000GB-HDD-to-500GB-SSD">workaround</a> that first uses the GParted Partition Editor to first resize the source disk. If you are not familiar with GParted, consider creating an unmodified backup image first and be extremely careful.</p>
   <p>I have determined a pathway to add <a target="_blank" href="https://github.com/rescuezilla/rescuezilla/issues/18#issuecomment-834179224">automatically restoring to partitions smaller than original (task #18)</a>, but it won't be completed for some time.</p>
